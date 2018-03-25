@@ -1,0 +1,258 @@
+html{
+    min-width: 1200px;
+}
+body{
+    width: 100%;
+    height: 2000px;
+}
+#header{
+    width: 100%;
+    height: 628px;
+    background: url("../img/index/main_banner.jpg") no-repeat center center;
+}
+#header #h_nav{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100px;
+    min-width: 1200px;
+}
+#header #h_nav.isFixed{
+    position: fixed;
+}
+#header .scroll{
+    background-color: rgba(251, 227, 255, 0.4);
+}
+#header #h_nav .main_nav{
+    float: right;
+    width: 700px;
+    height: 25px;
+}
+#header #h_nav .main_nav ul{
+    width: 100%;
+    height: 100%;
+}
+#header #h_nav .main_nav ul li{
+    float: left;
+    width: 104px;
+    height: 60px;
+    margin-top: 40px;
+}
+#header #h_nav .main_nav ul li a{
+    display: block;
+    width: 100%;
+    height: 25px;
+    padding-bottom: 35px;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #000;
+    transition: color .3s;
+}
+#header #h_nav .main_nav ul li a:hover{
+    color: orangered;
+}
+#header #h_nav .main_nav ul .line{
+    float: left;
+    width: 15px;
+    height: 100%;
+    margin-top: 40px;
+    background: url("../img/index/index.png") no-repeat -1542px -1440px;
+}
+#header #h_nav .hideDiv{
+    position: absolute;
+    display: none;
+    top: 100px;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(240, 219, 149, 0.4);
+}
+#header #h_nav .hideDiv ul{
+    float: right;
+    width: 100%;
+    height: 108px;
+}
+#header #h_nav .hideDiv ul li{
+    float: right;
+    width: 216px;
+    height: 100%;
+    margin-top: 40px;
+}
+#header #h_nav .hideDiv ul li+li{
+    border-right: 1px solid #9d9182;
+}
+#header #h_nav .hideDiv ul li div{
+    width: 80px;
+    height: 100%;
+    margin: 0 auto;
+    transition: margin-top .2s;
+    cursor: pointer;
+}
+#header #h_nav .hideDiv ul li div:hover{
+    margin-top: -10px;
+}
+#header #h_nav .hideDiv ul li .h_bg{
+    width: 100%;
+    height: 70px;
+    background: url("../img/index/index.png") no-repeat -1393px -301px;
+}
+#header #h_nav .hideDiv ul li .bg1{
+    background: url("../img/index/index.png") no-repeat -1393px -231px;
+}
+#header #h_nav .hideDiv ul li .bg2{
+    background: url("../img/index/index.png") no-repeat -1393px -301px;
+}
+#header #h_nav .hideDiv ul li .bg3{
+    height: 68px;
+    background: url("../img/index/index.png") no-repeat -1398px -371px;
+}
+/*#header #h_nav .hideDiv ul li .bg4{*/
+    /*background: url("../img/index/index.png") no-repeat -1393px -231px;*/
+/*}*/
+#header #h_nav .hideDiv ul li div p{
+    width: 100%;
+    height: 18px;
+    margin-top: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 16px;
+
+}
+#header #h_nav .h_logo{
+    float: left;
+    width: 370px;
+    height: 100%;
+}
+#header #h_nav .h_logo .ewm{
+    float: left;
+    width: 123px;
+    height: 100%;
+}
+#header #h_nav .h_logo .ewm p{
+    float: left;
+    width: 14px;
+    height: 76px;
+    margin: 10px 12px;
+    font-size: 14px;
+    white-space: normal;
+}
+#header #h_nav .h_logo .ewm img{
+    float: left;
+    width: 73px;
+    height: 73px;
+    margin-top: 12px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(225, 210, 197, 0.69);
+}
+#header #h_nav .h_logo .logo{
+    float: left;
+    width: 237px;
+    height: 100%;
+}
+#header #h_nav .h_logo .logo .logo_pic{
+    float: left;
+    width: 73px;
+    height: 73px;
+    background: url("../img/index/index.png") no-repeat -1400px -157px;
+    margin: 14px 12px;
+}
+#header #h_nav .h_logo .logo .p1{
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0 0 100px;
+}
+#header #h_nav .h_logo .logo .p2{
+    width: 140px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 16px;
+    margin: 8px 0 0 100px;
+}
+#header #logo_l{
+    position: absolute;
+    width: 70px;
+    height: 199px;
+    left: 0;
+    opacity: 0;
+    top: 40px;
+    transform: scale(1);
+    transition: transform .3s,opacity 1s,left 1s;
+    background: url("../img/index/logo.png") no-repeat center center;
+}
+#header #logo_l.scale{
+    transform: scale(0);
+}
+#header .role_box{
+    position: absolute;
+    left: 0;right: 0;
+    margin: auto;
+    width: 1105px;
+    height: 584px;
+}
+#header .role_box .r1{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 470px;
+    height: 537px;
+    background: url("../img/index/role/role1.png") no-repeat center center;
+    transition: opacity 1s,left 1s;
+}
+#header .role_box .r2{
+    position: absolute;
+    bottom: 0;
+    left: 330px;
+    width: 423px;
+    height: 544px;
+    background: url("../img/index/role/role2.png") no-repeat center center;
+    transition: opacity 1s,left 1s;
+}
+#header .role_box .r3{
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    left: 220px;
+    width: 491px;
+    height: 583px;
+    background: url("../img/index/role/role3.png") no-repeat center center;
+    transition: opacity 1s,left 1s;
+}
+#header .role_box .r4{
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    left: 110px;
+    width: 503px;
+    height: 501px;
+    background: url("../img/index/role/role4.png") no-repeat center center;
+    transition: opacity 1s,left 1s;
+}
+#header .role_box a{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90px;
+    height: 105px;
+    z-index: 2;
+}
+#header .role_box a .gif{
+    height: 100%;
+    width: 100%;
+}
+#header .role_box .button{
+    position: absolute;
+    left: 792px;
+    top: 291px;
+    width: 41px;
+    height: 66px;
+    cursor: pointer;
+    background: url("../img/index/index.png") no-repeat -1400px -439px ;
+    z-index: 2;
+    transition: transform  .5s;
+}
+#header .role_box .button:hover{
+    transform: scale(1.2);
+}
