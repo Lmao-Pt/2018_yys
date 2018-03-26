@@ -1,11 +1,13 @@
 html{
-    min-width: 1200px;
+    min-width: 1400px;
 }
 body{
     width: 100%;
     height: 2000px;
+    min-width: 1400px;
 }
 #header{
+    position: relative;
     width: 100%;
     height: 628px;
     background: url("../img/index/main_banner.jpg") no-repeat center center;
@@ -25,6 +27,7 @@ body{
 }
 #header #h_nav .main_nav{
     float: right;
+    margin-right: 40px;
     width: 700px;
     height: 25px;
 }
@@ -194,7 +197,7 @@ body{
 }
 #header .role_box .r1{
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
     left: 20px;
     width: 470px;
     height: 537px;
@@ -203,7 +206,7 @@ body{
 }
 #header .role_box .r2{
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
     left: 330px;
     width: 423px;
     height: 544px;
@@ -213,7 +216,7 @@ body{
 #header .role_box .r3{
     position: absolute;
     opacity: 0;
-    bottom: 0;
+    bottom: 1px;
     left: 220px;
     width: 491px;
     height: 583px;
@@ -223,7 +226,7 @@ body{
 #header .role_box .r4{
     position: absolute;
     opacity: 0;
-    bottom: 0;
+    bottom: 1px;
     left: 110px;
     width: 503px;
     height: 501px;
@@ -236,7 +239,7 @@ body{
     bottom: 0;
     width: 90px;
     height: 105px;
-    z-index: 2;
+    z-index: 10;
 }
 #header .role_box a .gif{
     height: 100%;
@@ -255,4 +258,314 @@ body{
 }
 #header .role_box .button:hover{
     transform: scale(1.2);
+}
+#header .role_box .role_btg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 23px;
+    z-index: 9;
+    background: url("../img/index/role/role_botbg.png") no-repeat 0 0;
+}
+#right_nav{
+    position: absolute;
+    width: 450px;
+    height: 1107px;
+    top: 422px;
+    left: 950px;
+    /*overflow-x: hidden;*/
+    z-index: 10;
+    /*background: url("../img/index/side_bg.png");*/
+}
+#right_nav .calender{
+    position: absolute;
+    top: -15px;
+    right: 110px;
+    width: 170px;
+    height: 160px;
+    z-index: 11;
+    background: url("../img/index/index.png") no-repeat -729px -857px;
+}
+#right_nav .nav_list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/index/side_bg.png");
+}
+#right_nav .nav_list p{
+    width: 148px;
+    height: 46px;
+    margin-left: 30px;
+    margin-top: 54px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(210,78,63);
+    background-color: rgb(250,229,51);
+    border-radius: 4px;
+}
+#right_nav .nav_list .p2{
+    position: relative;
+    font-size: 28px;
+    color: rgb(250,229,51);
+    background-color: rgb(210,78,63);
+    margin-top: 0;
+    padding-top: 0;
+    z-index: 12;
+}
+#right_nav .nav_list ul{
+    width: 320px;
+    height: 957px;
+    margin-left: 20px;
+    border: 1px solid #000;
+}
+#right_nav .nav_list ul .r_nav_li{
+    position: relative;
+    left: 0;
+    width: 316px;
+    height: 100px;
+    background: url("../img/index/index.png") no-repeat -660px -1044px;
+    cursor: pointer;
+    transition: left .5s;
+    /*margin-bottom: 14px;*/
+}
+#right_nav .nav_list ul .r_nav_li:hover{
+    left: 10px;
+}
+#right_nav .nav_list ul .li1 div{
+    position: absolute;
+    top: 12px;
+    left: 1px;
+    width: 100%;
+    height: 94px;
+    background: url("../img/index/index.png") no-repeat -759px -16px;
+    transition: height .5s ease-in-out;
+    z-index: -1;
+}
+#right_nav .nav_list ul .li1:hover div{
+    height: 197px;
+    z-index: 2;
+}
+#right_nav .slide_box{
+    position: absolute;
+    top: 43px;
+    left: -396px;
+    width: 396px;
+    height: 124px;
+    overflow: hidden;
+}
+#right_nav .slide_box .slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 396px;
+    height: 124px;
+    background: rgb(252,204,0);
+    border-radius: 10px;
+    transition: all .8s;
+}
+#right_nav .slide2{
+    position: absolute;
+    top: 43px;
+    left: -24px;
+    width: 24px;
+    height: 124px;
+    background: rgb(252,204,0);
+    border-radius: 10px;
+    transition: left 1s;
+    z-index: -1;
+    cursor: pointer;
+}
+#right_nav .slide2 div{
+    width: 100%;
+    height: 100%;
+    background: url("../img/index/index.png") no-repeat -1327px -607px;
+}
+#right_nav .slide_box .slide .s_btn{
+    float: left;
+    margin: 10px 0 0 10px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    background: url("../img/index/index.png") no-repeat -1452px -621px;
+}
+#right_nav .slide_box .slide .s_adv{
+    float: left;
+    margin: 10px 0 0 10px;
+    width: 48px;
+    height: 100px;
+    background: url("../img/index/index.png") no-repeat -1350px -614px;
+}
+#right_nav .slide_box .slide .s_ewm{
+    float: left;
+    margin: 10px 0 0 10px;
+    width: 106px;
+    height: 106px;
+}
+#right_nav .slide_box .slide .s_ewm img{
+    display: block;
+    width: 106px;
+    height: 106px;
+    border-radius: 10px;
+}
+#right_nav .slide_box .slide .s_btn_download{
+    float: left;
+    margin: 10px 0 0 10px;
+    width: 168px;
+    height: 50px;
+    border-radius: 4px;
+    background: #fff;
+}
+#right_nav .slide_box .slide .s_btn_download div{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    background:  url("../img/index/index.png") no-repeat -482px -1477px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#right_nav .slide_box .slide .s_btn_download .btn2{
+    background-color: #fff;
+    background: url("../img/index/index.png") no-repeat -650px -1477px;
+}
+#right_nav .slide_box .slide .s_btn_download div:hover{
+    opacity: 0.8;
+}
+#l_content{
+    width: 100%;
+    height: 270px;
+}
+#l_content #l_c_box{
+    width: 940px;
+    height: 100%;
+}
+#l_content #l_c_box .l_banner{
+    float: left;
+    width: 360px;
+    height: 100%;
+    overflow: hidden;
+    background: orangered;
+}
+#l_content #l_c_box .l_banner ul{
+    position: relative;
+    left: -1440px;
+    width: 500%;
+    height: 100%;
+    cursor: pointer;
+}
+#l_content #l_c_box .l_banner ul li{
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+#l_content #l_c_box .l_news{
+    float: left;
+    margin-left: 35px;
+    width: 500px;
+    height: 100%;
+}
+#l_content #l_c_box .l_news .news_nav{
+    width: 100%;
+    height: 45px;
+    border-bottom: 2px solid #000;
+}
+#l_content #l_c_box .l_news .news_nav .news_li{
+    float: left;
+    position: relative;
+    width: 74px;
+    height: 30px;
+    background: url("../img/index/index.png") no-repeat -1385px -1152px;
+    cursor: pointer;
+}
+#l_content #l_c_box .l_news .news_nav .li2{
+    background: url("../img/index/index.png") no-repeat -1385px -1122px;
+}
+#l_content #l_c_box .l_news .news_nav .li3{
+    background: url("../img/index/index.png") no-repeat -1385px -1092px;
+}
+#l_content #l_c_box .l_news .news_nav .li4{
+    background: url("../img/index/index.png") no-repeat -1385px -1062px;
+}
+#l_content #l_c_box .l_news .news_nav .li5{
+    background: url("../img/index/index.png") no-repeat -1385px -1031px;
+}
+#l_content #l_c_box .l_news .news_nav .news_li div{
+    position: absolute;
+    top: 5px;
+    display: none;
+    width: 100%;
+    height: 26px;
+    background: aqua;
+    border-radius: 50%;
+    z-index: -1;
+}
+#l_content #l_c_box .l_news .news_nav .news_li:hover div{
+    display: block;
+}
+#l_content #l_c_box .l_news .news_nav .n_line{
+    float: left;
+    width: 15px;
+    height: 30px;
+    margin-top: 10px;
+    background: url("../img/index/index.png") no-repeat -1542px -1440px;
+}
+#l_content #l_c_box .l_news #l_news{
+    position: relative;
+    width: 500px;
+    height: 209px;
+    overflow: hidden;
+    margin-top: 2px;
+    border-top: 1px solid #000;
+}
+#l_content #l_c_box .l_news #l_news .news{
+    position: relative;
+    left: 0;
+    width: 500%;
+    height: 100%;
+}
+#l_content #l_c_box .l_news #l_news .news .news_list{
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+#l_news .news .news_list ul{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#l_content #l_c_box .l_news #l_news .news .news_list ul li{
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px dotted #000;
+}
+#l_news .news .news_list ul li p{
+    float: left;
+    width: 420px;
+    height: 100%;
+}
+#l_news .news .news_list ul li p a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    color: #000;
+    font-size: 14px;
+}
+#l_news .news .news_list ul li p a:hover{
+    color: #ee33ff;
+}
+#l_news .news .news_list ul li span{
+    float: right;
+    width: 68px;
+    height: 100%;
+    line-height: 40px;
+    font-size: 12px;
+    color: #b7bcc2;
+
 }
