@@ -17,14 +17,15 @@
                 left: 372+'px',
                 opacity: 1
             }),
-            $slide2.css({
-                left: -24+'px',
-                zIndex: 1
-            })
+            setTimeout(function () {
+                $slide2.css({
+                    opacity: 1
+                })
+            },340)
         });
     $slide2.click(function() {
         $slide2.css({
-            zIndex: -1
+            opacity: 0
         }),
         $slide.css({
             left: 0,
@@ -147,6 +148,217 @@ var $news_banner=$(".news_li"),
           movement=step*(-250) +"px";
       $move.animate({"left": movement},"normal",function(){
           // animate的回调函数(即执行完动画之后才会执行函数里面的内容)
-
       })
   });
+
+  // $sub_btn.mouseenter(function (){
+  //     var type=this.tagName;
+  //     var index=$(this).index(".s1 .btn");
+  //     console.log(type);
+  //     console.log(index);
+  // });
+
+//二级菜单显隐
+    var $all=$('.p1'),
+        $s_s1=$('.s1'),
+        $ssr=$('.ssr'),
+        $s_s2=$('.s2'),
+        $s_s3=$('.s3'),
+        $s_s4=$('.s4'),
+        $s_s5=$('.s5'),
+        $sr=$('.sr'),
+        $r=$('.r'),
+        $n=$('.n'),
+        $allp=$('.sub1 p');
+    // $allp.mouseenter(function () {
+    //     $(this).css({
+    //         color: 'rgb(206,162,65)'
+    //     })
+    // });
+    // $allp.mouseleave(function () {
+    //     $(this).css({
+    //         color: '#000'
+    //     })
+    // });
+    $all.click(function () {
+        $s_s1.addClass("show");
+        var others=$('.s1').siblings();
+        others.removeClass('show');
+        $(this).css({
+            color: 'rgb(206,162,65)'
+        })
+
+        var other_p=$(this).siblings();
+        other_p.css({
+            color: '#000'
+        })
+        // other_p.hover(function(){
+        //     $(this).css({
+        //         color: 'rgb(206,162,65)'
+        //     })
+        // },function(){
+        //     $(this).css({
+        //         color: '#000'
+        //     })
+        // })
+    });
+    $ssr.click(function () {
+        $s_s2.addClass("show");
+        var others=$('.s2').siblings();
+        others.removeClass('show');
+
+        $(this).css({
+            color: 'rgb(206,162,65)'
+        })
+        var other_p=$(this).siblings();
+        other_p.css({
+            color: '#000'
+        });
+        // other_p.hover(function(){
+        //     $(this).css({
+        //         color: 'rgb(206,162,65)'
+        //     })
+        // },function(){
+        //     $(this).css({
+        //         color: '#000'
+        //     })
+        // })
+    });
+    $sr.click(function () {
+        $s_s3.addClass("show");
+        var others=$('.s3').siblings();
+        others.removeClass('show');
+
+        var other_p=$(this).siblings();
+        $(this).css({
+            color: 'rgb(206,162,65)'
+        });
+        other_p.css({
+            color: '#000'
+        });
+        // other_p.hover(function(){
+        //     $(this).css({
+        //         color: 'rgb(206,162,65)'
+        //     })
+        // },function(){
+        //     $(this).css({
+        //         color: '#000'
+        //     })
+        // })
+    });
+    $r.click(function () {
+        $s_s4.addClass("show");
+        var others=$('.s4').siblings();
+        others.removeClass('show');
+        $(this).css({
+            color: 'rgb(206,162,65)'
+        })
+        var other_p=$(this).siblings();
+        other_p.css({
+            color: '#000'
+        });
+        // other_p.hover(function(){
+        //     $(this).css({
+        //         color: 'rgb(206,162,65)'
+        //     })
+        // },function(){
+        //     $(this).css({
+        //         color: '#000'
+        //     })
+        // })
+    });
+    $n.click(function () {
+        $s_s5.addClass("show");
+        var others=$('.s5').siblings();
+        others.removeClass('show');
+        $(this).css({
+            color: 'rgb(206,162,65)'
+        })
+
+        var other_p=$(this).siblings();
+        other_p.css({
+            color: '#000'
+        });
+        // other_p.hover(function(){
+        //     $(this).css({
+        //         color: 'rgb(206,162,65)'
+        //     })
+        // },function(){
+        //     $(this).css({
+        //         color: '#000'
+        //     })
+        // })
+    });
+//end
+movement=0;
+var $sub_rbtn=$(".rbtn"),
+    $subbox=$('.subbox'),
+    $sub_lbtn=$(".lbtn");
+$sub_rbtn.click(function (){
+    movement=movement-822;
+    move=movement+'px';
+    $subbox.animate({"left": move},"normal",function(){
+
+    });
+});
+$sub_lbtn.click(function (){
+    movement=movement+822;
+    move=movement+'px';
+    $subbox.animate({"left": move},"normal",function(){
+
+    });
+});
+//strategy btn
+$(".b_rt").mouseenter(function() {
+   $(this).css({
+       background: '#000'
+   }),
+       $('.b_lt').css({
+       background: '#fff'
+    })
+    $('.img').animate({"left":-368+'px'},"normal",function () {
+        
+    })
+});
+$(".b_lt").mouseenter(function() {
+    $(this).css({
+        background: '#000'
+    }),
+    $('.b_rt').css({
+        background: '#fff'
+    }),
+    $('.img').animate({"left":0},"normal",function () {
+
+    })
+});
+//right st nav
+$(".st_nav .nav").mouseenter(function(){
+    $(this).addClass("show")
+    $(this).siblings().removeClass("show");
+});
+// right content move
+$(".first_nav").mouseenter(function () {
+   $(".content_box").css({
+       left: 0
+   })
+});
+$(".rookie").mouseenter(function () {
+    $(".content_box").css({
+        left: -850+"px"
+    })
+});
+$(".shishen").mouseenter(function () {
+    $(".content_box").css({
+        left: -1700+"px"
+    })
+});
+$(".battle").mouseenter(function () {
+    $(".content_box").css({
+        left: -2550+"px"
+    })
+});
+$(".play").mouseenter(function () {
+    $(".content_box").css({
+        left: -3400+"px"
+    })
+});
