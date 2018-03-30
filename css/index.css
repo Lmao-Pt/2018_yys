@@ -4,7 +4,7 @@ html{
 body{
     width: 100%;
     min-width: 1400px;
-    height: 10000px;
+    /*height: 10000px;*/
 }
 #header{
     position: relative;
@@ -893,7 +893,7 @@ body{
     margin: 184px 0 0 40px;
 }
 #right_st .st_nav{
-    width: 100%;
+    width: 96%;
     height: 90px;
     padding-bottom: 10px;
     overflow: hidden;
@@ -1020,4 +1020,477 @@ body{
     font-size: 14px;
     text-indent: 2ch;
     color: #b1b4ab;
+}
+#fan{
+    float: left;
+    width: 1220px;
+    height: 534px;
+    margin: 40px 0 0 100px;
+}
+#fan .part_logo{
+    float: left;
+    width: 112px;
+    height: 107px;
+    background: url("../img/index/index.png") no-repeat -928px -666px;
+}
+#fan .fan_nav{
+    position: relative;
+    float: left;
+    margin-left: 40px;
+    width: 1064px;
+    height: 84px;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+}
+#fan .fan_nav .upload{
+    float: left;
+    width: 102px;
+    height: 33px;
+    margin-top: 20px;
+    transition: all .5s;
+    background: url("../img/index/index.png") no-repeat -930px -600px;
+
+}
+#fan .fan_nav .upload:hover{
+    margin-left: 10px;
+}
+#fan .fan_nav ul{
+    float: left;
+    width: 940px;
+    height: 60px;
+
+}
+#fan .fan_nav ul li{
+    position: relative;
+    float: left;
+    width: 155px;
+    height: 100%;
+    cursor: pointer;
+}
+#fan .fan_nav ul li+li{
+    border-left: 1px dotted #000;
+}
+#fan .fan_nav ul li p{
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    transition: all .5s;
+}
+#fan .fan_nav ul li .show{
+    margin-top: -10px;
+}
+
+#fan .fan_nav ul li .icon{
+    position: absolute;
+
+    left: 0;
+    /*bottom: -80px;*/
+    bottom: -80px;
+    width: 100%;
+    height: 53px;
+    z-index: 99;
+    transition: all .5s;
+    background: #fff url("../img/index/fan/icons.png") no-repeat 0px 0px;
+}
+#fan .fan_nav ul li .ic2{
+    background: url("../img/index/fan/icons.png") no-repeat -166px 0px;
+
+}
+#fan .fan_nav ul li .ic3{
+    background: url("../img/index/fan/icons.png") no-repeat -312px 0px;
+
+}
+#fan .fan_nav ul li .ic4{
+    background: url("../img/index/fan/icons.png") no-repeat -468px 0px;
+
+}
+#fan .fan_nav ul li .ic5{
+    background: url("../img/index/fan/icons.png") no-repeat -624px 0px;
+
+}
+#fan .fan_nav ul li .ic6{
+    background: url("../img/index/fan/icons.png") no-repeat -780px 0px;
+
+}
+/*#fan .fan_nav ul li:hover .icon{*/
+    /*bottom: -26px;*/
+/*}*/
+#fan .fan_nav ul  .show .icon{
+    bottom: -26px;
+}
+#fan .fan_nav ul  .show p{
+    margin-top: -10px;
+}
+#fan .fan_content{
+    position: relative;
+    float: left;
+    margin-top: 40px;
+    width: 1202px;
+    height: 380px;
+    overflow: hidden;
+}
+#fan .fan_content .con_box{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600%;
+    height: 100%;
+    transition: all .5s;
+}
+#fan .fan_content .con_box .content{
+    float: left;
+    width: 1202px;
+    height: 100%;
+}
+#fan .fan_content .con_box .content ul{
+    width: 100%;
+    height: 50%;
+}
+#fan .fan_content .con_box .content ul li{
+    position: relative;
+    float: left;
+    margin-right: 14px;
+    width: 286px;
+    height: 100%;
+}
+#fan .fan_content .con_box .content ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 164px;
+    background-color: #000;
+}
+#fan .fan_content .con_box .content ul li a img{
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+}
+#fan .fan_content .con_box .content ul li p{
+    width: 100%;
+    height: 16px;
+    margin-top: 4px;
+    line-height: 16px;
+    text-indent: 4px;
+    color: #564858;
+}
+#fan .fan_content .con_box .content ul li a .shadow{
+    position: absolute;
+    top: 0;bottom: 0;
+    left: 0;right: 0;
+    margin: auto;
+    width: 80px;
+    height: 96px;
+    opacity: 0;
+    transition: all .3s;
+    background: url(../img/index/index.png) -679px -474px
+}
+#fan .fan_content .con_box .content ul li a:hover .shadow{
+    opacity: 1;
+}
+#fan .fan_content .con_box .content ul li a:hover img{
+    opacity: 0.6;
+}
+
+#vw{
+    float: left;
+    width: 100%;
+    height: 514px;
+    margin-top: 60px;
+    background: url("../img/index/video/video_bg.jpg") no-repeat top center;
+}
+#vw .vw_content{
+    width: 1262px;
+    height: 420px;
+    margin: 56px 0 0 100px;
+}
+#vw .vw_content .vwcont{
+    float: left;
+    margin-right: 40px;
+    width: 586px;
+    height: 416px;
+}
+#vw .vw_content .vwcont .vm_box{
+    float: left;
+    width: 272px;
+    height: 200px;
+    margin: 0 20px 10px 0;
+    overflow: hidden;
+}
+#vw .vw_content .vwcont .vm_box a{
+    float: left;
+    width: 270px;
+    height: 154px;
+    transition: all .5s;
+}
+#vw .vw_content .vwcont .vm_box a:hover{
+    transform: scale(1.05);
+}
+#vw .vw_content .vwcont  .box1 a{
+    display: block;
+    width: 228px;
+    height: 150px;
+    background: url("../img/index/index.png") no-repeat -1076px -466px;
+}
+#vw .vw_content .vwcont  .box1 a:hover{
+    transform: none;
+}
+#vw .vw_content .vwcont  .box2 a{
+    display: block;
+    width: 228px;
+    height: 148px;
+    background: url("../img/index/index.png") no-repeat -1100px -614px;
+}
+#vw .vw_content .vwcont .vm_box a img{
+    width: 100%;
+    height: 100%;
+}
+#vw .vw_content .vwcont .vm_box p{
+    float: left;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    text-indent: 2ch;
+    background: white;
+}
+#activity{
+    float: left;
+    width: 100%;
+    height: 370px;
+    margin-top: 62px;
+}
+#activity .acti{
+    float: left;
+    margin-left: 100px;
+    width: 257px;
+    height: 100%;
+    background: url("../img/index/activity/activity_title.png") no-repeat;
+}
+#activity .acti_cont{
+    float: left;
+    width: 962px;
+    height: 346px;
+
+    margin-left: 66px;
+}
+#activity .acti_cont .cont{
+    width: 100%;
+    height: 153px;
+    margin-bottom: 36px;
+}
+#activity .acti_cont .cont div{
+    position: relative;
+    width: 270px;
+    height: 153px;
+    float: left;
+    margin-right: 50px;
+    overflow: hidden;
+}
+#activity .acti_cont .cont div img{
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+#activity .acti_cont .cont div:hover img{
+    transform: scale(1.1);
+}
+#activity .acti_cont .cont div p{
+    position: absolute;
+    left: 10px;
+    bottom:10px;
+    height: 24px;
+    line-height: 24px;
+    width: auto;
+    padding: 0 6px 0 6px;
+    border: 1px solid #fff;
+    color: #ffffff;
+}
+#contact{
+    float: left;
+    margin-top: 68px;
+    width: 100%;
+    height: 199px;
+}
+#contact .contact_box{
+    width: 1208px;
+    height: 100%;
+    float: left;
+    margin-left: 100px;
+}
+#contact .contact_box .ctc_logo{
+    float: left;
+    width: 70px;
+    height: 100%;
+    background: url("../img/index/logo.png") no-repeat;
+}
+
+#contact .contact_box .box{
+    position: relative;
+    width: 270px;
+    height: 100%;
+    float: left;
+    margin-left: 126px;
+    background: rgb(246,246,246);
+}
+#contact .contact_box .box2{
+    margin-left: 60px;
+}
+#contact .contact_box .box2 .service{
+    width: 112px;
+    height: 112px;
+    margin: 0 auto;
+    background: url("../img/index/index.png") no-repeat -567px -473px;
+}
+
+#contact .contact_box .box p{
+    float: left;
+    width: 14px;
+    height: auto;
+    margin-top: 24px;
+    line-height: 19px;
+    font-size: 15px;
+}
+#contact .contact_box .box .p1{
+    margin-left: 30px;
+}
+#contact .contact_box .box .large{
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: bold;
+}
+#contact .contact_box .box .bott{
+    width: 100%;
+    height: 14px;
+    margin-left: 30px;
+    font-size: 14px;
+}
+#contact .contact_box .box .bott span{
+    color: #a1a180;
+}
+#contact .contact_box .box p+p{
+    margin-left: 10px;
+}
+#contact .contact_box .box2 .ser_p{
+    float: left;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+#contact .contact_box .box .ewm{
+    position: absolute;
+    top: -32px;
+    right: -32px;
+    width: 164px;
+    height: 164px;
+    border: 1px solid rgb(156, 159, 165);
+}
+#contact .contact_box .box .ewm img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 118px;
+    height: 118px;
+
+}
+#footer{
+    position: relative;
+    float: left;
+    margin-top: 74px;
+    width: 100%;
+    height: 524px;
+    overflow: hidden;
+    background: url("../img/index/foot.jpg") no-repeat center center;
+}
+#footer .title{
+    /*position: absolute;*/
+    /*top: 0; right: 0;bottom: 0;left: 0;*/
+    margin: 0 auto;
+    margin-top: 110px;
+    width: 592px;
+    height: 28px;
+    background: url("../img/index/index.png") no-repeat -659px -1150px;
+
+}
+#footer .flmid{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 56px;
+    width: 240px;
+    height: 326px;
+    cursor: pointer;
+}
+#footer .flmid p{
+    width: 118px;
+    height: 24px;
+    margin: auto;
+    transition:  all .7s;
+    background: url("../img/index/index.png") no-repeat -930px -633px;
+
+}
+#footer .flmid .p1{
+    position: absolute;
+    width: 22px;
+    height: 74px;
+    top: 30px;
+    left: 110px;
+    z-index: 9;
+    transition:  all .7s;
+    background: url("../img/index/index.png") no-repeat -1400px -81px;
+}
+#footer .flmid:hover .p1{
+    top: -30px;
+}
+#footer .flmid .p2{
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    height: 156px;
+    transition:  all .5s;
+    opacity: 0;
+    z-index: 1;
+}
+#footer .flmid:hover .p2{
+    top: 20px;
+    opacity: 1;
+}
+#footer .flmid .p2 img{
+    float: left;
+    display: block;
+    width: 156px;
+    height: 156px;
+    margin-left: 42px;
+    box-shadow: #7497ff 1px 1px 12px 1px;
+}
+#footer .flmid .p2 p{
+    width: 12px;
+    height: 100%;
+    float: left;
+    margin-left: 30px;
+    font-size: 14px;
+    background: none;
+}
+#footer .flmid .p3{
+    position: absolute;
+    top: 120px;
+    width: 215px;
+    height: 221px;
+    margin-left: 20px;
+    transition:  all .7s;
+    background: url("../img/index/index.png") no-repeat -355px -366px;
+
+}
+#footer .flmid:hover .p3{
+    top: 170px;
+}
+#footer .flmid:hover .ti{
+    opacity: 0;
 }

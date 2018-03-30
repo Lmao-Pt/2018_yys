@@ -362,3 +362,59 @@ $(".play").mouseenter(function () {
         left: -3400+"px"
     })
 });
+
+//fan_nav
+$('.f_l1').mouseenter(function (){
+    $(this).siblings().removeClass('show'),
+    $(this).addClass('show'),
+    $('.fan_nav ul li p').removeClass("show"),
+        $('.f_l1 p').addClass('show'),
+   $('.con_box').css({
+       left: 0
+   })
+});
+$('.f_l2').mouseenter(function (){
+    $(this).siblings().removeClass('show'),
+        $(this).addClass('show'),
+        $('.fan_nav ul li p').removeClass("show"),
+        $('.f_l2 p').addClass('show'),
+        $('.con_box').css({
+            left: -1202+'px'
+        })
+});
+$('.f_l3').mouseenter(function (){
+    $(this).siblings().removeClass('show'),
+        $(this).addClass('show'),
+        $('.fan_nav ul li p').removeClass("show"),
+        $('.f_l3 p').addClass('show'),
+        $('.con_box').css({
+            left: -2404+'px'
+        })
+});
+$('.f_l4').mouseenter(function (){
+    $(this).siblings().removeClass('show'),
+        $(this).addClass('show'),
+        $('.fan_nav ul li p').removeClass("show"),
+        $('.f_l4 p').addClass('show'),
+        $('.con_box').css({
+            left: -3606+'px'
+        })
+});
+$('.f_l5').mouseenter(function (){
+    $(this).siblings().removeClass('show'),
+        $(this).addClass('show'),
+        $('.fan_nav ul li p').removeClass("show"),
+        $('.f_l5 p').addClass('show'),
+        $('.con_box').css({
+            left: -4808+'px'
+        })
+});
+$('.f_l6').mouseenter(function (){
+    $(this).siblings().removeClass('show'),
+        $(this).addClass('show'),
+        $('.fan_nav ul li p').removeClass("show"),
+        $('.f_l6 p').addClass('show'),
+        $('.con_box').css({
+            left: -6010+'px'
+        })
+});
